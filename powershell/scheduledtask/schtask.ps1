@@ -30,7 +30,7 @@ $resultTasktemp = [PSCustomObject]@{
 #Hunting String in Executable Property
 If($taskaction.Execute -like  "*certutil.exe*")
 {
-    Write-host "Found malware on " $env:COMPUTERNAME + " in " $tasks.TaskName
+     Write-host "Found malware on" $env:COMPUTERNAME "in" $tasks.TaskName
 }
 
 $resultTask += $resultTasktemp
