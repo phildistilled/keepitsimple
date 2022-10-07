@@ -43,4 +43,3 @@ $resultTask += $resultTasktemp
 #Grab all scheduled tasks in case we need it later
 $resultTask | Export-Csv -NoTypeInformation $schtasksCSV
 
-#Write to Netlogon share??
