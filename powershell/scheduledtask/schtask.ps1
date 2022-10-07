@@ -31,6 +31,7 @@ $resultTasktemp = [PSCustomObject]@{
 If($taskaction.Execute -like  "*certutil.exe*")
 {
      Write-host "Found malware on" $env:COMPUTERNAME "in" $tasks.TaskName
+     Resolve-DNSName -Name $env:COMPUTERNAME-"Malware-Found.isitfound.distilled.info"
 }
 
 $resultTask += $resultTasktemp
