@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Cybersecurity Report</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            color: #333;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+        .container {
+            width: 80%;
+            margin: auto;
+            overflow: hidden;
+        }
+        .header {
+            background: #005a9c;
+            color: #fff;
+            padding: 20px 0;
+            text-align: center;
+        }
+        .header h1 {
+            margin: 0;
+        }
+        .toc {
+            background: #e7e7e7;
+            padding: 20px;
+            border: 1px solid #ddd;
+        }
+        .toc h2 {
+            color: #005a9c;
+        }
+        .toc ul {
+            list-style: none;
+            padding: 0;
+        }
+        .toc ul li {
+            margin-bottom: 10px;
+        }
+        .toc a {
+            text-decoration: none;
+            color: #333;
+        }
+        .section {
+            background: #fff;
+            padding: 20px;
+            margin-top: 20px;
+            border: 1px solid #ddd;
+        }
+        .section h2, .section h3 {
+            color: #005a9c;
+        }
+        .finding {
+            margin-left: 20px;
+            padding: 10px;
+            background: #f9f9f9;
+            border-left: 4px solid #005a9c;
+        }
+        .footer {
+            text-align: center;
+            padding: 20px 0;
+            background: #e7e7e7;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>{{ report_title }}</h1>
+            <p><strong>Date:</strong> {{ report_date }}</p>
+        </div>
+
+        <div class="toc">
+            <!-- Table of Contents -->
+            ...
+        </div>
+
+        <div class="section" id="executive-summary">
+            <!-- Executive Summary -->
+            ...
+        </div>
+
+        <div class="section" id="findings">
+            <!-- Findings Sections -->
+            ...
+        </div>
+
+        <div class="section" id="conclusion">
+            <!-- Conclusion -->
+            ...
+        </div>
+
+        <div class="footer">
+            <p>Cybersecurity Report © {{ current_year }}</p>
+        </div>
+    </div>
+</body>
+</html>
