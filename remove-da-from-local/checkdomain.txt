@@ -1,0 +1,9 @@
+Had the same issue and running this command fixed it for me:
+On the Domain Controller run:
+DCDiag /Fix
+Then restart the NetLogon service
+Now when you go back to the DNS admin UI all your 'missing underscore folders' should have been rebuilt.
+
+A good test to validate that your DC can be resolved is run this command from any windows workstation/server:
+
+nltest /dsgetdc:<your Domain Controller Domain>
